@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chrome Dino Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <div id="ui-layer">
+            <div id="start-screen" class="screen active">
+                <h1>DINO RUN</h1>
+                <p>Press <span class="key">SPACE</span> to Start</p>
+                <p class="subtitle">Jump: Space / Up | Duck: Down</p>
+            </div>
+            <div id="game-over-screen" class="screen">
+                <h1>GAME OVER</h1>
+                <p>Score: <span id="final-score">0</span></p>
+                <p>Press <span class="key">SPACE</span> to Restart</p>
+            </div>
+            <div id="score-board">
+                <span>HI <span id="high-score">00000</span></span>
+                <span id="current-score">00000</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
